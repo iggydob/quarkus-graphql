@@ -1,9 +1,12 @@
 package org.iggydob;
 
+import io.ebean.annotation.WhenModified;
 import jakarta.inject.Inject;
+import jakarta.persistence.Column;
 import jakarta.validation.Valid;
 import org.eclipse.microprofile.graphql.*;
 
+import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -43,4 +46,6 @@ public class CustomerResource {
             @Name("id") UUID id) {
         return customerRepository.update(id, customer);
     }
+
+    private ZonedDateTime registered;
 }
