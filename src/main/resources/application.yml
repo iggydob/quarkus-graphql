@@ -7,17 +7,18 @@ quarkus:
   http:
     port: 8080
 
-ebean:
-  dbSchema: my_app      # use this schema rather than public
-  migration:
-    run: true           # run database migrations on startup
-  ddl:
-    generate: true
-    run: true
+#ebean:
+#  dbSchema: my_app      # use this schema rather than public
+#  migration:
+#    run: true           # run database migrations on startup
+#  ddl:
+#    generate: true
+#    run: true
+#
 
-#db default
 datasource:
   db:
     username: portal
     password: portal
     url: jdbc:postgresql://localhost:30002/graphql
+    databaseDriver: org.postgresql.Driver
