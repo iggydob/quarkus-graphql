@@ -1,11 +1,12 @@
-greeting:
-  message: "hello"
 quarkus:
   smallrye-graphql:
     events:
       enabled: true
   http:
     port: 8080
+  datasource:
+    devservices:
+      enabled: false     # disables Quarkus devServices, including Docker
 
 #ebean:
 #  dbSchema: my_app      # use this schema rather than public
@@ -14,7 +15,6 @@ quarkus:
 #  ddl:
 #    generate: true
 #    run: true
-#
 
 datasource:
   db:

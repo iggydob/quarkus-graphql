@@ -21,6 +21,9 @@ dependencies {
     implementation 'io.quarkus:quarkus-smallrye-graphql'
     implementation 'io.quarkus:quarkus-smallrye-graphql-client'
 
+    // NOT IN USE
+//    implementation 'io.quarkus:quarkus-hibernate-orm'
+
     // Testing
     testImplementation 'io.quarkus:quarkus-junit5'
 
